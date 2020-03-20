@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GrapesJS</title>
+    <!-- <link rel="stylesheet" href="dist/css/grapes.min.css"> -->
+    <script src="{% static 'editor_ui/grapesjs/dist/grapes.min.js' %}"></script>
+    <title>GrapesJS Preset Webpage</title>
+    <!-- <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"> -->
+
+    <!--CSS -->
+    <link rel="stylesheet" href="{% static 'editor_ui/grapesjs/dist/css/grapes.min.css' %}">
+    <link rel="stylesheet" href="{% static 'editor_ui/grapesjs/dist/grapesjs-preset-webpage.min.css' %}">
+
+    <script src="{% static '//feather.aviary.com/imaging/v3/editor.js' %}"></script>
+    <!-- <script src="https://static.filestackapi.com/v3/filestack-0.1.10.js"></script>
+    <script src="https://unpkg.com/grapesjs"></script> -->
+    <script src="{% static 'editor_ui/grapesjs/dist/grapesjs-preset-webpage.min.js' %}"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+    
+    <script src="{% static 'editor_ui/grapesjs/dist/blockManager.js' %}"></script>
+</body>
+
+</html>
