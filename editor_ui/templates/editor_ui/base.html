@@ -4,22 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GrapesJS</title>
-    <!-- <link rel="stylesheet" href="dist/css/grapes.min.css"> -->
-    <script src="{% static 'editor_ui/grapesjs/dist/grapes.min.js' %}"></script>
-    <title>GrapesJS Preset Webpage</title>
-    <!-- <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"> -->
+    <title>Automation Tools Editor</title>
+    <link rel="icon" href="{% static 'editor_ui/favicon.ico' %}">
 
     <!--CSS -->
     <link rel="stylesheet" href="{% static 'editor_ui/grapesjs/dist/css/grapes.min.css' %}">
     <link rel="stylesheet" href="{% static 'editor_ui/grapesjs/dist/grapesjs-preset-webpage.min.css' %}">
 
-    <link rel="icon" href="{% static 'editor_ui/favicon.ico' %}">
-
-    <script src="{% static '//feather.aviary.com/imaging/v3/editor.js' %}"></script>
-    <!-- <script src="https://static.filestackapi.com/v3/filestack-0.1.10.js"></script>
-    <script src="https://unpkg.com/grapesjs"></script> -->
+    <!-- Script -->
+    <script src="{% static 'editor_ui/grapesjs/dist/grapes.min.js' %}"></script>
     <script src="{% static 'editor_ui/grapesjs/dist/grapesjs-preset-webpage.min.js' %}"></script>
+
     <style>
         body,
         html {
@@ -31,7 +26,7 @@
 
 <body>
     {% block content %}{% endblock %}
-    
+
     <script src="{% static 'editor_ui/grapesjs/dist/blockManager.js' %}"></script>
 </body>
 
